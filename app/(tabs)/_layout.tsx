@@ -32,6 +32,15 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name="myDevice"
+        options={{
+          title: 'My Device',
+          tabBarIcon: ({ color, focused }) => (
+            <TabBarIcon name={focused ? 'water' : 'water-outline'} color={color} />
+          ),
+        }}
+      />
     </Tabs>
   );
 }
